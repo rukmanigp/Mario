@@ -80,10 +80,10 @@ function draw() {
     score = score+getFrameRate()/30;
     
      
-  text("SCORE : " + Math.round(score), 300, 50);
-    text("HighSCORE : " + Math.round(highscore), 500, 100);
+ // text("SCORE : " + Math.round(score), 300, 50);
+    //text("HighSCORE : " + Math.round(highscore), 500, 100);
     
-    console.log("Score :"+Math.round(score)+"  "+"HighScore  "+Math.round(highscore)        );
+ //   console.log("Score :"+Math.round(score)+"  "+"HighScore  "+Math.round(highscore) );
     
     
     if (keyDown("space") && mario.y >= 100) {
@@ -170,6 +170,12 @@ mario.changeAnimation('collided', marioAnim_collided)
 //console.log(restart.visible)
 
   drawSprites();
+  stroke("white");
+  textSize(20);
+  fill("white");
+  
+  text("Score : " + Math.round(score), 300, 50);
+    text("HighScore : " + Math.round(highscore), 300, 70);
   
 }
 
