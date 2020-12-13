@@ -1,6 +1,4 @@
-//https://editor.p5js.org/RukmaniG/sketches/NMvFE6Mw5
-//https://docs.google.com/spreadsheets/d/1l9mEKhaPOs4EzU5kSbgqSVgfkRStret8vk-A3ehE9HE/edit#gid=0
-//https://docs.google.com/spreadsheets/d/e/2PACX-1vRaTpYh7Qpx70S2eKWeJXtCoFCp6kT99RTsClhx7Jxy-9ewH_1zsCKUQviWLzmGYgVdA7qqQTX-VaiG/pubhtml#
+
 var PLAY = 1;
 var END = 0;
 var gameState = PLAY;
@@ -45,10 +43,7 @@ function setup() {
   cloud = createSprite(200, 190, 200, 20);
   cloud.addImage('c1', cloudImage);
   cloud.x = cloud.width/2;
- // cloud.scale=0.9
-  //to show forward movement of Mario
- // ground.velocityX = -4;
-  //cloud.velocityX=-4;
+
   //to make Mario collide with the iground to remove the gap between Mario and the ground image and also make visibility false
  iground = createSprite(300, 195, 600, 10);
 
