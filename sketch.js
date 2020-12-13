@@ -59,7 +59,7 @@ function setup() {
 
   score = 0;
   gameOver = createSprite(300, 100);
-  gameOver.addImage(gameOverImg);
+//  gameOver.addImage(gameOverImg);
   gameOver.scale = 0.5;
   restart = createSprite(300, 140);
   restart.addImage(restartImg);
