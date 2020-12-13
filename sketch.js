@@ -36,7 +36,7 @@ function setup() {
   mario.addAnimation('running', marioAnim);
   mario.addAnimation('collided', marioAnim_collided)
   mario.setCollider('rectangle', 0, 0, 30,30);
-  mario.debug = true;
+  //mario.debug = true;
   //mario.scale=;
   //creating ground so that Mario doesnt go further down
   ground = createSprite(200, 190, 200, 20);
