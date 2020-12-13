@@ -74,7 +74,7 @@ function draw() {
   if (gameState === PLAY) {
     gameOver.visible = false;
     restart.visible = false;
-  //  score.visible=true;
+ 
     ground.velocityX = -(4+score/100);
     
     score = score+0.1;
