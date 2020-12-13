@@ -59,7 +59,7 @@ function setup() {
 
   score = 0;
   gameOver = createSprite(300, 100);
-//  gameOver.addImage(gameOverImg);
+  gameOver.addImage(gameOverImg);
   gameOver.scale = 0.5;
   restart = createSprite(300, 140);
   restart.addImage(restartImg);
@@ -74,16 +74,13 @@ function draw() {
   if (gameState === PLAY) {
     gameOver.visible = false;
     restart.visible = false;
-    score.visible=true;
+  //  score.visible=true;
     ground.velocityX = -(4+score/100);
     
-    score = score+getFrameRate()/30;
+    score = score+0.1;
     
      
- // text("SCORE : " + Math.round(score), 300, 50);
-    //text("HighSCORE : " + Math.round(highscore), 500, 100);
-    
- //   console.log("Score :"+Math.round(score)+"  "+"HighScore  "+Math.round(highscore) );
+
     
     
     if (keyDown("space") && mario.y >= 100) {
